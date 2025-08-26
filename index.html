@@ -1,0 +1,394 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="International Corporate Skill Foundation (ICSF) is a non-profit focused on skill development, corporate training, and capacity building in India and globally." name="description">
+  <title>International Corporate Skill Foundation (ICSF)</title>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #a8e6cf 0%, #ffb347 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      border-radius: 0 0 15px 15px;
+    }
+    header img.logo {
+      height: 80px;
+      width: auto;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    header img.logo:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0.2rem 0;
+      color: #2e5d27;
+      font-weight: 600;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 1.4rem 1.8rem;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: #235107;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #ffb347;
+    }
+    h3 {
+      color: #2a6200;
+      margin-top: 1.5rem;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .gallery-images img,
+    .video-stories img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.02);
+    }
+    .leadership-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+    .leadership-member img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .leadership-member strong {
+      color: #235107;
+      font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    form input, form textarea {
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #2a6200;
+    }
+    form button {
+      padding: 0.8rem;
+      background-color: #235107;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #2a6200;
+    }
+    a {
+      color: #235107;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #ffb347;
+      text-decoration: underline;
+    }
+    .project {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      border-left: 4px solid #ffb347;
+    }
+    .project img {
+      max-height: 200px;
+      width: auto;
+      max-width: 100%;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .leadership-member {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      section {
+        padding: 1rem;
+      }
+      .project img {
+        max-height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img alt="ICSF Logo" class="logo" loading="lazy" src="Logo.jpg">
+    <h1>International Corporate Skill Foundation (ICSF)</h1>
+    <p>A Not-for-Profit Organization</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>The International Corporate Skill Foundation (ICSF) is a not-for-profit organization focused on empowering individuals and organizations through skill development, training, and capacity building.</p>
+      <p><strong>Incorporated:</strong> July 13, 2020</p>
+      <p><strong>Registered Office:</strong> Nagpur, Maharashtra, India</p>
+      <p><strong>Legal Structure:</strong> Section 8 Company (Non-Profit)</p>
+      <p><strong>CIN:</strong> U80903MH2020NPL341857</p>
+    </section>
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>To bridge the gap between industry needs and workforce capabilities by providing high-quality, accessible skill development programs across corporate, technical, and entrepreneurial domains.</p>
+    </section>
+    <section>
+      <h2>Key Focus Areas</h2>
+      <ul>
+        <li>Skill Development & Certification</li>
+        <li>Corporate Training & Workshops</li>
+        <li>Employability Enhancement</li>
+        <li>Capacity Building for NGOs and Institutions</li>
+        <li>International Collaborations for Knowledge Exchange</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Strategic Collaborations</h2>
+      <ul>
+        <li>International Trip Support Consultancy</li>
+        <li>International School Of Innovation Foundation</li>
+        <li>Skill India – NSDC (National Skill Development Corporation)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Leadership</h2>
+      <ul>
+        <li class="leadership-member"><img alt="Sanjay Raghuvirsingh Pawar" loading="lazy" src="Pawar.jpg"> <strong>Sanjay Raghuvirsingh Pawar</strong> – Director</li>
+        <li class="leadership-member"><img alt="Kundan Wasudeo Ingle" loading="lazy" src="Ingle.jpg"> <strong>Kundan Wasudeo Ingle</strong> – Director</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Capital Structure</h2>
+      <ul>
+        <li><strong>Authorized Capital:</strong> ₹1,00,000</li>
+        <li><strong>Paid-up Capital:</strong> ₹1,00,000</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Our Project</h2>
+      <p>Explore our official project presentation to understand the vision, mission, and milestones of the International Corporate Skill Foundation (ICSF). You can download the full project file using the link below.</p>
+      <a href="ICSF_project.pdf" download>Download Project PDF</a>
+    </section>
+    <section>
+      <h2>Testimonials</h2>
+      <ul>
+        <li>"ICSF helped me get my first job in IT!" – Meena, Student</li>
+        <li>"The workshops are practical and engaging." – Rajesh, NGO Partner</li>
+        <li>"ICSF is a bridge between talent and opportunity." – HR Manager, TechCorp</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Our Impact</h2>
+      <ul>
+        <li>1,200+ Students Trained</li>
+        <li>85% Placement Rate</li>
+        <li>20+ Training Modules</li>
+      </ul>
+    </section>
+    <section>
+      <h2>FAQs</h2>
+      <h3>Who can enroll?</h3>
+      <p>Anyone aged 18 and above with basic education.</p>
+      <h3>Is there a certification?</h3>
+      <p>Yes, all courses include industry-recognized certificates.</p>
+      <h3>How do I apply?</h3>
+      <p>Visit our website or contact us via the form below.</p>
+    </section>
+    <section>
+      <h2>Connect With Us</h2>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://facebook.com/icsf" target="_blank">Facebook</a>
+        <a href="https://linkedin.com/company/icsf" target="_blank">LinkedIn</a>
+        <a href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+        <a href="https://goo.gl/maps/abc123" target="_blank">Google Maps</a>
+        <a href="mailto:contact@icsf.org">Email</a>
+        <a href="tel:+919999999999">Call Us</a>
+      </div>
+    </section>
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>📅 June 15, 2025 – Digital Skills Workshop – Nagpur Training Centre</li>
+        <li>📅 July 1, 2025 – Career Readiness Webinar (Online)</li>
+        <li>📅 August 5, 2025 – Soft Skills Bootcamp – Mumbai</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>🖥️ Basic Digital Literacy</li>
+        <li>📊 Office & Excel Essentials</li>
+        <li>💼 Entrepreneurship Development</li>
+        <li>🎤 Corporate Communication</li>
+        <li>🧠 Personality Development & Interview Prep</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Trainer Profiles</h2>
+      <h3>Twinkle Kapse</h3>
+      <p>15+ years in HR & corporate training, ex-TCS</p>
+      <h3>Shreelekh Ingle</h3>
+      <p>Specialist in IT Literacy & IT Tools</p>
+      <h3>Namita Adkande</h3>
+      <p>Soft Skills Coach with 12 years of experience</p>
+    </section>
+    <section>
+      <h2>Media Coverage</h2>
+      <a href="#" target="_blank">ICSF featured in 'The Times of India' for its employability programs</a>
+      <a href="#" target="_blank">Local News: 100+ women certified in computer basics</a>
+      <a href="#" target="_blank">Radio FM 90.2 – ICSF expert interview on skill development</a>
+    </section>
+    <section>
+      <h2>Training Centres Gallery</h2>
+      <div class="gallery-images">
+        <img alt="Training Centre Building" loading="lazy" src="training_centre_front.jpeg">
+        <img alt="Reception Area" loading="lazy" src="1.jpeg">
+        <img alt="Transport Vans" loading="lazy" src="2.jpeg">
+        <img alt="Administrative Office" loading="lazy" src="3.jpeg">
+        <img alt="Classroom View 1" loading="lazy" src="4.jpeg">
+        <img alt="Classroom View 2" loading="lazy" src="6.jpeg">
+        <img alt="Computer Lab 1" loading="lazy" src="7.jpeg">
+        <img alt="Student Training Session" loading="lazy" src="8.jpeg">
+        <img alt="Computer Lab 2" loading="lazy" src="9.jpeg">
+        <img alt="Classroom Instruction" loading="lazy" src="10.jpeg">
+      </div>
+    </section>
+    <section id="gov-projects">
+      <h2>Government-Aligned Projects</h2>
+      <div class="project">
+        <h3>Nai Manzil</h3>
+        <img src="1.jpg" alt="Nai Manzil">
+        <p>Nai Manzil aims to engage constructively with poor Minority youth and help them obtain sustainable and gainful employment opportunities that can facilitate them to be integrated with mainstream economic activities.</p>
+      </div>
+      <div class="project">
+        <h3>Nai Roshni</h3>
+        <img src="2.png" alt="Nai Roshni">
+        <p>"Nai Roshni" is the Scheme for Leadership Development of Minority Women, under the Ministry of Minority Affairs.</p>
+      </div>
+      <div class="project">
+        <h3>NULM (National Urban Livelihood Mission)</h3>
+        <img src="3.jpg" alt="NULM">
+        <p>NULM is designed to provide skills to the unskilled urban poor as well as to upgrade their existing skills.</p>
+      </div>
+      <div class="project">
+        <h3>Recognition of Prior Learning (RPL)</h3>
+        <img src="4.jpg" alt="RPL">
+        <p>RPL provides recognition to informal learning or learning through work to get equal acceptance as formal education.</p>
+      </div>
+      <div class="project">
+        <h3>Seekho Aur Kamao (Learn and Earn)</h3>
+        <img src="5.jpg" alt="Seekho Aur Kamao">
+        <p>A 100% Central Sector Scheme for skill development of minorities, implemented by the Ministry of Minority Affairs since 2013–14.</p>
+      </div>
+      <div class="project">
+        <h3>USTTAD Scheme</h3>
+        <img src="6.jpg" alt="USTTAD">
+        <p>Upgrading the Skills and Training in Traditional Arts/Crafts for Development under the Ministry of Minority Affairs.</p>
+      </div>
+      <div class="project">
+        <h3>Grant-in-Aid Welfare of Scheduled Tribes</h3>
+        <img src="7.jpg" alt="Scheduled Tribes Welfare">
+        <p>This scheme enhances the reach of government welfare programs in tribal areas through voluntary efforts and organizations.</p>
+      </div>
+      <div class="project">
+        <h3>Ambedkar Hastshilp Vikas Yojana</h3>
+        <img src="8.jpg" alt="Ambedkar Hastshilp Yojana">
+        <p>This scheme promotes premium handicrafts, supports mass production, and preserves heritage crafts through development commissions.</p>
+      </div>
+      <div class="project">
+        <h3>Hunar Se Rozgar Tak (HSRT)</h3>
+        <img src="10.jpg" alt="HSRT">
+        <p>HSRT creates employable skills amongst youth in the hospitality and tourism sector.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Your Name</label> 
+        <input id="name" name="name" required type="text">
+        <label for="email">Your Email</label>
+        <input id="email" name="email" required type="email">
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
